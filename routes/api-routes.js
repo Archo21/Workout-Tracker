@@ -3,6 +3,7 @@ const Workout= require("../models/workout");
 const { param } = require("./html-routes");
 
 router.post('/api/workouts', (req, res) => {
+console.log(req.body);
 Workout.create ({})
 .then ((data)=>{
      res.json(data);
